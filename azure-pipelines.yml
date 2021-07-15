@@ -8,19 +8,17 @@ pool:
 vmImage: 'ubuntu-latest'
 steps:
 - task: Prisma Cloud IaC Scan@3
-inputs:
-Path: '.'
-prismaCloudService: 'PrismaIAC'
-High: '1'
-Medium: '1'
-Low: '1'
-Operator: 'or'
-#- script: echo Hello, world!
-displayName: 'Run a one-line script'
+  inputs:
+    Path: '.'
+    prismaCloudService: 'PrismaIAC'
+    High: '1'
+    Medium: '1'
+    Low: '1'
+    Operator: 'or'
 - script: |
-echo Add other tasks to build, test, and deploy your project.
-echo See https://aka.ms/yaml
-displayName: 'Run a multi-line script'
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
 - task: TerraformInstaller@0
   inputs:
     terraformVersion: '0.12.3'
