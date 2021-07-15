@@ -1,7 +1,8 @@
  # Specify the template types.The valid values are TF, CFT, K8S
- template_type: TF
- terraform_version: 0.12
-terraform_012_parameters:
+template_type: TF
+terraform_version: 0.12
+terraform_012_parameters: 
+variable_files: 
 tags:
   - 'Org: Panw'
   - 'Team: ShiftLeft'
