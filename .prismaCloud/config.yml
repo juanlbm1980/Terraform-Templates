@@ -2,7 +2,6 @@
  template_type: TF
  terraform_version: 0.12
 terraform_012_parameters:
-  - root_module: 
 tags:
   - 'Org: Panw'
   - 'Team: ShiftLeft'
