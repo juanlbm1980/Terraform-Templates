@@ -5,7 +5,7 @@
 trigger:
 - main
 pool:
-vmImage: 'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 steps:
 - task: Prisma Cloud IaC Scan@3
   inputs:
