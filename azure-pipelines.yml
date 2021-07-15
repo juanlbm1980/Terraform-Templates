@@ -21,4 +21,4 @@ steps:
   displayName: 'Run a multi-line script'
 - task: TerraformInstaller@0
   inputs:
-    terraformVersion: '0.12.3'
+    terraformVersion: '0.12'
